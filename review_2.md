@@ -58,6 +58,8 @@ echo $prev->diff($now)->format('%a')
 ```
 
 -(https://www.php.net/manual/ja/index.php)のウェブサイトにアクセスする。
--`format`で検索し、`DateInterval::format`のページに遷移する。
+-`format`で検索する。
+-上記のコードでは、現在の日付と指定された日付の差分から、経過した総日数を計算している。
+-そのため、日付や時刻の差分を表す際に使用される`DateInterval`オブジェクトの`format`メソッドのページに遷移する。
 -`public DateInterval::format(string $format): string`と出る。
 -返り値が`string`で、フォーマットされた間隔を返す。指定したフォーマット文字列`%a`は、日数を表す整数値を返すことができる。
