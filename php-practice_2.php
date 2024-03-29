@@ -34,7 +34,7 @@
   ];
   
     //問題1
-  echo  $personalInfos[1]['name'] . "の電話番号は" . $personalInfos[1]['tel'] . "です。\n";
+  echo $personalInfos[1]['name'] . "の電話番号は" . $personalInfos[1]['tel'] . "です。\n";
   
     //問題2
   $n = 1;
@@ -79,11 +79,10 @@
 // Q5 定義済みクラス
   //問題1
   $date = new DateTime('2021-03-02');
-  $date->setTimeZone(new DateTimeZone('Asia/Tokyo'));
-  // 先月の末日
+    // 先月の末日
   $last_date = new DateTime(date('Y-m-d', strtotime('last day of previous month', $date->getTimestamp())));
   $last_date = $last_date->format('Y-m-d');
-  // 1か月前
+    // 1か月前
   $prev_date = $date->modify('-1 month')->format('Y-m-d');
 
   if ($last_date < $prev_date)

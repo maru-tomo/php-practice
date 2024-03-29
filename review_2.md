@@ -58,6 +58,6 @@ echo $prev->diff($now)->format('%a')
 ```
 
 -(https://www.php.net/manual/ja/index.php)のウェブサイトにアクセスする。
--`DateTime`で検索し、`DateTime`クラスのページを選択し、メソッドの一覧から`format`メソッドのページに遷移する。
--`public DateTime::format(string $format): string`と出る。
--返り値が`string`で、フォーマット済みの日付文字列を返す。指定したフォーマット文字列`%a`は、日数を表す整数値を返すことができる。
+-`format`で検索し、`DateInterval::format`のページに遷移する。
+-`public DateInterval::format(string $format): string`と出る。
+-返り値が`string`で、フォーマットされた間隔を返す。指定したフォーマット文字列`%a`は、日数を表す整数値を返すことができる。
